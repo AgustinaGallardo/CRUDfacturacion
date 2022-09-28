@@ -1,0 +1,14 @@
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\CRUDfacturacion\bin\Debug\CRUDfacturacion.exe.config
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\CRUDfacturacion\bin\Debug\CRUDfacturacion.exe
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\CRUDfacturacion\bin\Debug\CRUDfacturacion.pdb
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\CRUDfacturacion\obj\Debug\CRUDfacturacion.csproj.AssemblyReference.cache
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\CRUDfacturacion\obj\Debug\CRUDfacturacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\CRUDfacturacion\obj\Debug\CRUDfacturacion.Properties.Resources.resources
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\CRUDfacturacion\obj\Debug\CRUDfacturacion.csproj.GenerateResource.cache
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\CRUDfacturacion\obj\Debug\CRUDfacturacion.csproj.CoreCompileInputs.cache
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\CRUDfacturacion\obj\Debug\CRUDfacturacion.exe
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\CRUDfacturacion\obj\Debug\CRUDfacturacion.pdb
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\CRUDfacturacion\bin\Debug\System.Data.SqlClient.dll
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\CRUDfacturacion\bin\Debug\System.Data.SqlClient.xml
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\CRUDfacturacion\obj\Debug\CRUDfacturacion.frmAltaFactura.resources
+C:\Users\China\Documents\SEGUNDO CUATRIMESTRE\programacion II\CRUDfacturacion\obj\Debug\CRUDfacturacion.csproj.CopyComplete
