@@ -69,7 +69,7 @@
             // 
             this.lblNext.AutoSize = true;
             this.lblNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNext.Location = new System.Drawing.Point(29, 20);
+            this.lblNext.Location = new System.Drawing.Point(29, 9);
             this.lblNext.Name = "lblNext";
             this.lblNext.Size = new System.Drawing.Size(120, 24);
             this.lblNext.TabIndex = 0;
@@ -79,17 +79,18 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 60);
+            this.label2.Location = new System.Drawing.Point(38, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Cliente";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(281, 167);
+            this.label3.Location = new System.Drawing.Point(334, 170);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 16);
             this.label3.TabIndex = 3;
@@ -99,7 +100,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(42, 124);
+            this.label4.Location = new System.Drawing.Point(334, 48);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 16);
             this.label4.TabIndex = 4;
@@ -109,7 +110,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(49, 167);
+            this.label5.Location = new System.Drawing.Point(30, 166);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 16);
             this.label5.TabIndex = 5;
@@ -119,7 +120,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 88);
+            this.label6.Location = new System.Drawing.Point(0, 88);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 16);
             this.label6.TabIndex = 6;
@@ -128,16 +129,17 @@
             // txtCliente
             // 
             this.txtCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCliente.Location = new System.Drawing.Point(107, 57);
+            this.txtCliente.Location = new System.Drawing.Point(111, 49);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(192, 22);
             this.txtCliente.TabIndex = 1;
+            this.txtCliente.TextChanged += new System.EventHandler(this.txtCliente_TextChanged);
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(356, 167);
+            this.txtCantidad.Location = new System.Drawing.Point(409, 167);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(144, 20);
+            this.txtCantidad.Size = new System.Drawing.Size(91, 20);
             this.txtCantidad.TabIndex = 5;
             // 
             // dgvFactura
@@ -156,6 +158,7 @@
             this.dgvFactura.ReadOnly = true;
             this.dgvFactura.Size = new System.Drawing.Size(547, 150);
             this.dgvFactura.TabIndex = 7;
+            this.dgvFactura.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFactura_CellContentClick);
             // 
             // colID
             // 
@@ -216,7 +219,7 @@
             this.cboFormaPago.FormattingEnabled = true;
             this.cboFormaPago.Location = new System.Drawing.Point(107, 85);
             this.cboFormaPago.Name = "cboFormaPago";
-            this.cboFormaPago.Size = new System.Drawing.Size(192, 24);
+            this.cboFormaPago.Size = new System.Drawing.Size(488, 24);
             this.cboFormaPago.TabIndex = 2;
             // 
             // btnAceptar
@@ -241,14 +244,14 @@
             // cboArticulo
             // 
             this.cboArticulo.FormattingEnabled = true;
-            this.cboArticulo.Location = new System.Drawing.Point(115, 166);
+            this.cboArticulo.Location = new System.Drawing.Point(95, 166);
             this.cboArticulo.Name = "cboArticulo";
-            this.cboArticulo.Size = new System.Drawing.Size(160, 21);
+            this.cboArticulo.Size = new System.Drawing.Size(208, 21);
             this.cboArticulo.TabIndex = 4;
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(107, 124);
+            this.dtpFecha.Location = new System.Drawing.Point(399, 48);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(196, 20);
             this.dtpFecha.TabIndex = 3;

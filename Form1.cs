@@ -140,8 +140,26 @@ namespace CRUDfacturacion
             cboFormaPago.SelectedIndex=-1;
             dgvFactura.Rows.Clear();
         }
-    }
 
-       
-    }
+        private void label2_Click(object sender, EventArgs e)
+        {
+                
+        }
+
+        private void txtCliente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvFactura_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(dgvFactura.CurrentCell.ColumnIndex==4)
+            {
+                nueva.QuitarDetalle(dgvFactura.CurrentRow.Index);
+                dgvFactura.Rows.Remove(dgvFactura.CurrentRow);
+                nueva.CalcularTotal();
+            }
+        }
+    }       
+}
 

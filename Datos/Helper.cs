@@ -63,13 +63,16 @@ namespace CRUDfacturacion.Datos
 
             try
             {
-                SqlCommand cmdMaestro = new SqlCommand();
                 t = cnn.BeginTransaction();
+                SqlCommand cmdMaestro = new SqlCommand();
                 cnn.Open();
+            
+                
                 cmdMaestro.Connection = cnn;
                 cmdMaestro.Transaction = t;
-                cmdMaestro.CommandText= "SP_INSERT_MAESTRO";
                 cmdMaestro.CommandType = CommandType.StoredProcedure;
+                cmdMaestro.CommandText= "SP_INSERT_MAESTRO";
+                
 
                 cmdMaestro.Parameters.AddWithValue("@fecha",oFactura.Fecha);
                 cmdMaestro.Parameters.AddWithValue("@id_formapago", oFactura.FormaPago.IdFormaPago);
@@ -77,8 +80,8 @@ namespace CRUDfacturacion.Datos
 
                 SqlParameter OutPut = new SqlParameter();
                 OutPut.ParameterName = "@nroFactura";
-                OutPut.Direction = ParameterDirection.Output;
                 OutPut.DbType = DbType.Int32;
+                OutPut.Direction = ParameterDirection.Output;                
 
                 cmdMaestro.Parameters.Add(OutPut);
 
@@ -86,7 +89,7 @@ namespace CRUDfacturacion.Datos
 
                 int nroFactura = (int)OutPut.Value;
 
-                foreach (DetalleFactura item in oFactura.ListDetalles)
+                foreach (DetalleFactura df in oFactura.ListDetalles)
                 {
                     SqlCommand cmdDetalle = new SqlCommand();
 
@@ -96,8 +99,8 @@ namespace CRUDfacturacion.Datos
                     cmdDetalle.CommandText="sp_INSERTAR_DETALLE";
 
                     cmdDetalle.Parameters.AddWithValue("@nroFactura",nroFactura);
-                    cmdDetalle.Parameters.AddWithValue("@id_articulo", item.Articulo.IdArticulo);
-                    cmdDetalle.Parameters.AddWithValue("@cantidad", item.Cantidad);
+                    cmdDetalle.Parameters.AddWithValue("@id_articulo", df.Articulo.IdArticulo);
+                    cmdDetalle.Parameters.AddWithValue("@cantidad", df.Cantidad);
 
                     cmdDetalle.ExecuteNonQuery();
                 }
